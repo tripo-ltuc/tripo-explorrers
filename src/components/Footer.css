@@ -1,0 +1,50 @@
+.footer-home{
+  background-color: #242323;
+  /* background: linear-gradient(#502c2c, #484e8d);    color: white; */
+  color: rgb(255, 255, 255);
+  clear: both;
+  position: absolute;
+  width: 100%;
+}
+.footer-side{
+  position: relative;
+
+}
+
+.social-container {
+  background: #eee;
+  padding: 25px 50px;
+}
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+a.social:hover {
+  transform: translateY(-10px);
+}
+
+a.youtube {
+  color: #eb3223;
+}
+
+a.facebook {
+  color: #4968ad;
+}
+
+a.twitter {
+  color: #49a1eb;
+}
+
+a.instagram {
+  color:#df507f;
+}
+
+.txt-social{
+  text-align: right;
+  margin-right: -3%;
+  
+}
+.title-footer{
+  text-align: center;
+}

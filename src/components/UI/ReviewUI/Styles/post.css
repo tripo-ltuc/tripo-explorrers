@@ -1,0 +1,16 @@
+.card-post{
+    background-color: rgb(255, 255, 234);
+    display: flex;
+    /* margin-left: 10%; */
+    margin: 2% 0 2% 12%;
+    border-radius: 5%;
+}
+
+.cardCity{
+    float: right;
+}
+
+.contentReview{
+    background: whitesmoke;
+    font-size: 20px;
+}

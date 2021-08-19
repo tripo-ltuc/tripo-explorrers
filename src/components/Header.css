@@ -1,0 +1,28 @@
+a {
+  color:#fff;
+text-decoration: none;
+font-size: 18px;
+}
+
+a:hover{
+  color:darkgrey;
+text-decoration: none;
+
+}
+
+.navbar-home{
+text-decoration: none;
+
+}
+
+#nav-dropdown{
+color:#fff;
+text-decoration: none;
+
+}
+
+#nav-dropdow:hover{
+color:darkgrey;
+text-decoration: none;
+
+}
