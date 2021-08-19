@@ -1,7 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Carousel from 'react-bootstrap/Carousel';
-import {Card,Col,Row} from 'react-bootstrap';
+import {Card} from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import HotelModal from '../ModalComponents/HotalModal';
 

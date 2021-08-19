@@ -45,7 +45,7 @@ class Discover extends React.Component {
     }
     //============================getting weather Data from weater API=====================//
     getWeatherData = () => {
-        const url = `http://localhost:3001/Weather?lat=${this.state.latitude}&lon=${this.state.latitude}&city=${this.state.cityName}`;
+        const url = `${process.REACT_APP_URL}/Weather?lat=${this.state.latitude}&lon=${this.state.latitude}&city=${this.state.cityName}`;
 
         axios
             .get(url)
@@ -64,7 +64,7 @@ class Discover extends React.Component {
     }
     //===============================get hotel data from hotel API===========================//
     getHotelData = () => {
-        const url = `http://localhost:3001/Hotel?cityName=${this.state.cityName}`;
+        const url = `${process.REACT_APP_URL}/Hotel?cityName=${this.state.cityName}`;
 
         axios
             .get(url)
@@ -82,7 +82,7 @@ class Discover extends React.Component {
     //======================================get covid data from covid API===========================
 
     getCovidData = () => {
-        const url = `http://localhost:3001/Covid?cityName=${this.state.cityName}`;
+        const url = `${process.REACT_APP_URL}/Covid?cityName=${this.state.cityName}`;
         axios
             .get(url)
             .then(result => {
@@ -99,7 +99,7 @@ class Discover extends React.Component {
 
     //======================================get turs data from turs API===========================
     getTursData = () => {
-        const url = `http://localhost:3001/Activity?lat=${this.state.latitude}&lon=${this.state.longitude}`;
+        const url = `${process.REACT_APP_URL}/Activity?lat=${this.state.latitude}&lon=${this.state.longitude}`;
 
         axios
             .get(url)
@@ -118,7 +118,7 @@ class Discover extends React.Component {
 
     //======================================get restaurant data from restaurant API===========================
     getRestaurantData = () => {
-        const url = `http://localhost:3001/Resturant?cityName=${this.state.cityName}`;
+        const url = `${process.REACT_APP_URL}/Resturant?cityName=${this.state.cityName}`;
 
         axios
             .get(url)

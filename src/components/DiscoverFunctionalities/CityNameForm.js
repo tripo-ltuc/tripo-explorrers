@@ -32,7 +32,7 @@ class CityNameForm extends React.Component {
         // console.log(this.state.name);
 //=============================== getting lat , lon from LocationIQ API====================================//
         axios
-        .get(`http://localhost:3001/Location?cityName=${CN}`)
+        .get(`${process.REACT_APP_URL}/Location?cityName=${CN}`)
         .then(result =>{
             this.setState({
                 lat : result.data.lat,
