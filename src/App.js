@@ -28,8 +28,6 @@ class App extends React.Component {
     return this.state.cityName;
   }
 render() {
-
-
     return (
       // <>
         <section>
@@ -60,7 +58,6 @@ render() {
               <Route exact path="/discover">
                 {this.props.auth0.isAuthenticated && (<Discover setCityName={this.setCityName}/>)}
               </Route>
-              
             </Switch>
           </Router>
           <Footer />
@@ -69,5 +66,4 @@ render() {
     );
   }
 }
-
 export default withAuth0(App);
