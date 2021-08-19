@@ -7,9 +7,6 @@ import { faProcedures,faBookDead,faVirus,faVirusSlash,faCalendarDay,faExclamatio
 
 class Covid19Rendaring extends React.Component {
     
-
- 
-
     render() {
         return ( <React.Fragment>
         <div style={{margin:'3rem 0 3rem 20rem', width:'75%',color:'#40514E' }}>
@@ -40,7 +37,5 @@ class Covid19Rendaring extends React.Component {
             </div>
             </React.Fragment>)
     }
-
-
 }
 export default Covid19Rendaring;
