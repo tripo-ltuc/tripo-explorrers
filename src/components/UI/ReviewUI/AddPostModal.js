@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import Modal from "react-bootstrap/Modal";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
+import React, { Component } from 'react';
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 
 class CardsModal extends Component {
   render() {
@@ -10,48 +10,51 @@ class CardsModal extends Component {
         <Modal
           show={this.props.show}
           onHide={this.props.closingModal}
-          backdrop="static"
+          backdrop='static'
           keyboard={false}
-          dialogClassName="modal-10w"
+          dialogClassName='modal-10w'
         >
           <Modal.Header closeButton>
             <Modal.Title>Your Comments Count!</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <Form onSubmit={this.props.addingReviews}>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Group className="mb-3" controlId="formBasicPassword">
+              <Form.Group className='mb-3' controlId='formBasicEmail'>
+                <Form.Group className='mb-3' controlId='formBasicPassword'>
                   <Form.Label>Add city Name</Form.Label>
                   <Form.Control
-                    type="text"
-                    name="nameOfCity"
-                    placeHolder="Please enter the name of city you visited"
+                    type='text'
+                    name='nameOfCity'
+                    placeHolder='Please enter the name of city you visited'
+                    required
                   />
                 </Form.Group>
 
-                <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Group className='mb-3' controlId='formBasicPassword'>
                   <Form.Label>Add city imag!</Form.Label>
                   <Form.Control
-                    type="text"
-                    name="imgName"
-                    placeHolder="Please enter an image of the city you want to comment about!"
+                    type='text'
+                    name='imgName'
+                    placeHolder='Please enter an image of the city you want to comment about!'
+                    required
                   />
                 </Form.Group>
                 <Form.Label>Add your comment</Form.Label>
                 <Form.Control
-                  type="text"
-                  name="userComment"
-                  placeHolder="Please enter your comment!"
+                  type='text'
+                  name='userComment'
+                  placeHolder='Please enter your comment!'
+                  required
                 />
               </Form.Group>
 
-              <Button variant="primary" type="submit">
+              <Button variant='primary' type='submit'>
                 Submit
               </Button>
             </Form>
           </Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={this.props.closingModal}>
+            <Button variant='secondary' onClick={this.props.closingModal}>
               Close
             </Button>
           </Modal.Footer>
